@@ -133,18 +133,22 @@ section {
   letter-spacing: 0.08em;
   font-size: 13px;
   text-transform: uppercase;
+  overflow: hidden;
+  max-height: 48px;
 }
 .brand-mark {
   width: 28px; height: 28px;
   position: relative;
 }
 .brand-mark svg { width: 100%; height: 100%; }
-.brand-logo { 
-  height: 32px !important; 
-  width: auto !important; 
-  max-height: 32px !important;
-  max-width: 200px !important;
-  display: block; 
+.brand-logo {
+  height: 32px;
+  width: auto;
+  max-height: 32px;
+  max-width: 160px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
 .brand-text small {
