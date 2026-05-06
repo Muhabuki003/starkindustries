@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stark Industries — Built to Withstand. Engineered to Perform.</title>
+<meta name="description" content="High-pressure compressors trusted from Houston to the Arctic Circle. Diesel, electric & seismic packages built since 1962.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <a href="#top" class="brand">
+    <img src="Starkindustrieslogo.png" alt="Stark Industries" class="brand-logo">
+  </a>
+  <div class="nav-links">
+    <a href="#compressors">Compressors</a>
+    <a href="#purification">Air Purification</a>
+    <a href="#accessories">Accessories</a>
+    <a href="#services">Services</a>
+    <a href="#remanufacturing">Remanufacturing</a>
+    <a href="#about">About</a>
+  </div>
+  <div class="nav-cta">
+    <span class="nav-phone">713 · 592 · 0377</span>
+    <a href="#contact" class="btn btn-primary nav-quote" style="padding: 10px 16px;">Request Quote</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-grid-bg"></div>
+  <canvas id="hero-canvas"></canvas>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="hero-meta">
+        <span>HOUSTON, TX</span>
+        <span>SINCE 1962</span>
+        <span>5,000+ PSI</span>
+      </div>
+      <h1 class="display">Built to Withstand.<br><em>Engineered</em> to Perform.</h1>
+      <p class="hero-sub">High-Pressure Compressors — trusted from Houston to the Arctic Circle. Diesel, electric & seismic packages built in our 40,000 sq ft facility since 1962.</p>
+      <div class="hero-cta">
+        <a href="#compressors" class="btn btn-primary">Explore Compressors <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost">Request a Quote</a>
+      </div>
+      <dl class="hero-spec">
+        <div><dt>Years in business</dt><dd>60+</dd></div>
+        <div><dt>Models in catalog</dt><dd>19</dd></div>
+        <div><dt>Max pressure</dt><dd>8,000<span style="font-size:14px;color:var(--steel-dim);font-style:normal;font-family:var(--mono);"> PSI</span></dd></div>
+      </dl>
+    </div>
+    <aside class="hero-readout">
+      <i class="readout-corners"><i></i></i>
+      <div class="readout-top">
+        <div>
+          <div class="readout-label">UNIT // STARK DD-100</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--text-dim);margin-top:4px;">DIRECT DRIVE · ELECTRIC</div>
+        </div>
+        <span class="readout-status">RUNNING</span>
+      </div>
+      <div class="readout-mid">
+        <div class="readout-rpm">
+          <div class="num" id="rpm-num">1,750</div>
+          <div class="unit">RPM · MOTOR SHAFT</div>
+        </div>
+      </div>
+      <div class="readout-bottom">
+        <div class="row"><span class="lbl">Pressure</span><span class="val" id="psi-num">5,870</span><span class="lbl" style="font-size:8px;">PSI</span></div>
+        <div class="row"><span class="lbl">Flow</span><span class="val">100.0</span><span class="lbl" style="font-size:8px;">CFM</span></div>
+        <div class="row"><span class="lbl">Stage 5 Temp</span><span class="val">182°F</span><span class="lbl" style="font-size:8px;">NOMINAL</span></div>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<!-- ============ STATS ============ -->
+<section class="stats" style="padding: 80px 0;">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="num" data-count="60" data-suffix="+">0</div>
+        <div class="lbl">Years in Business</div>
+        <div class="desc">Founded 1962 by Jess Stark in Houston, Texas.</div>
+      </div>
+      <div class="stat">
+        <div class="num" data-count="40000">0</div>
+        <div class="lbl">Sq Ft Facility</div>
+        <div class="desc">On 1¼ acres in the heart of Houston.</div>
+      </div>
+      <div class="stat">
+        <div class="num" data-count="5000" data-suffix="+">0</div>
+        <div class="lbl">PSI Capability</div>
+        <div class="desc">Tested up to 8,000 PSI on field units.</div>
+      </div>
+      <div class="stat">
+        <div class="num" style="font-size:clamp(48px,6vw,88px);">Global</div>
+        <div class="lbl">Client Base</div>
+        <div class="desc">Africa to the Arctic Circle.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORY HIGHLIGHTS ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="meta">
+        <span class="section-num">[01] PRODUCT LINES</span>
+        <span class="eyebrow">CATALOG</span>
+      </div>
+      <h2 class="section-title">Three product lines.<br>One <em>uncompromising</em> standard.</h2>
+    </div>
+    <div class="categories" data-reveal-stagger>
+      <a href="#compressors" class="cat-card">
+        <div>
+          <div class="num-tag">[ A.01 ]</div>
+          <div class="visual">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+              <circle cx="60" cy="60" r="55" stroke="#D4A017" stroke-width="1" opacity="0.4"/>
+              <rect x="40" y="20" width="40" height="80" rx="2" stroke="#D4A017" stroke-width="1"/>
+              <line x1="40" y1="35" x2="80" y2="35" stroke="#D4A017" opacity="0.6"/>
+              <line x1="40" y1="50" x2="80" y2="50" stroke="#D4A017" opacity="0.6"/>
+              <line x1="40" y1="65" x2="80" y2="65" stroke="#D4A017" opacity="0.6"/>
+              <line x1="40" y1="80" x2="80" y2="80" stroke="#D4A017" opacity="0.6"/>
+              <circle cx="60" cy="60" r="8" fill="#D4A017"/>
+              <circle cx="60" cy="60" r="3" fill="#0A0A1A"/>
+            </svg>
+          </div>
+          <h3>Compressors</h3>
+          <p>Diesel, Electric & Seismic packages built for the toughest environments — onshore, offshore, and arctic.</p>
+        </div>
+        <div class="cta">19 MODELS <span>→</span></div>
+      </a>
+      <a href="#purification" class="cat-card">
+        <div>
+          <div class="num-tag">[ A.02 ]</div>
+          <div class="visual">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+              <rect x="35" y="20" width="14" height="80" stroke="#D4A017" stroke-width="1"/>
+              <rect x="53" y="20" width="14" height="80" stroke="#D4A017" stroke-width="1"/>
+              <rect x="71" y="20" width="14" height="80" stroke="#D4A017" stroke-width="1"/>
+              <line x1="35" y1="40" x2="49" y2="40" stroke="#D4A017" opacity="0.5"/>
+              <line x1="53" y1="55" x2="67" y2="55" stroke="#D4A017" opacity="0.5"/>
+              <line x1="71" y1="40" x2="85" y2="40" stroke="#D4A017" opacity="0.5"/>
+              <circle cx="42" cy="15" r="3" fill="#D4A017"/>
+              <circle cx="60" cy="15" r="3" fill="#D4A017"/>
+              <circle cx="78" cy="15" r="3" fill="#D4A017"/>
+            </svg>
+          </div>
+          <h3>Air Purification</h3>
+          <p>Grade E breathing air systems for SCUBA, fire rescue & industrial use. Lawrence Factor X-pendable® filters.</p>
+        </div>
+        <div class="cta">8 SYSTEMS <span>→</span></div>
+      </a>
+      <a href="#accessories" class="cat-card">
+        <div>
+          <div class="num-tag">[ A.03 ]</div>
+          <div class="visual">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+              <rect x="20" y="50" width="20" height="50" stroke="#D4A017" stroke-width="1"/>
+              <rect x="42" y="50" width="20" height="50" stroke="#D4A017" stroke-width="1"/>
+              <rect x="64" y="50" width="20" height="50" stroke="#D4A017" stroke-width="1"/>
+              <rect x="86" y="50" width="14" height="50" stroke="#D4A017" stroke-width="1"/>
+              <line x1="20" y1="60" x2="100" y2="60" stroke="#D4A017" opacity="0.4"/>
+              <circle cx="30" cy="40" r="3" fill="#D4A017"/>
+              <circle cx="52" cy="40" r="3" fill="#D4A017"/>
+              <circle cx="74" cy="40" r="3" fill="#D4A017"/>
+              <path d="M30 40 L30 30 M52 40 L52 30 M74 40 L74 30" stroke="#D4A017"/>
+              <line x1="20" y1="30" x2="84" y2="30" stroke="#D4A017"/>
+            </svg>
+          </div>
+          <h3>Accessories & Storage</h3>
+          <p>Complete cascade systems, control panels, drain systems, manifolds & high-pressure storage cylinders.</p>
+        </div>
+        <div class="cta">FULL CATALOG <span>→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY STARK ============ -->
+<section style="padding: 0;">
+  <div class="wrap">
+    <div class="section-head" data-reveal style="padding-top: 80px;">
+      <div class="meta">
+        <span class="section-num">[02] PRINCIPLES</span>
+        <span class="eyebrow">WHY STARK</span>
+      </div>
+      <h2 class="section-title">Three reasons compressors built in 1969<br>are <em>still running</em> today.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="num">PRINCIPLE 01</div>
+        <h3>Direct Drive Design</h3>
+        <p>No belts. Smoother operation. Less maintenance. Longer life. We design every machine — diesel, electric, or self-contained — for minimum space & weight, with maximum efficiency.</p>
+      </div>
+      <div class="why-item">
+        <div class="num">PRINCIPLE 02</div>
+        <h3>Houston-Built</h3>
+        <p>Every compressor is manufactured in our 40,000 sq ft Houston facility on 1¼ acres. A complete supply of spare parts is on our shelves. No outsourcing. No middlemen.</p>
+      </div>
+      <div class="why-item">
+        <div class="num">PRINCIPLE 03</div>
+        <h3>Simplicity = Reliability</h3>
+        <p>Conventional controls — no PLCs. Every unit we've built since 1969 is still running today. We've consistently stayed away from programmable controllers because simplicity translates directly to long life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPRESSORS CATALOG ============ -->
+<section id="compressors">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="meta">
+        <span class="section-num">[03] FULL CATALOG</span>
+        <span class="eyebrow">COMPRESSORS</span>
+      </div>
+      <div>
+        <h2 class="section-title">A complete line of <em>diesel & electric</em> compressor packages.</h2>
+        <p class="lede" style="margin-top:24px;">Whether diesel, electric, or self-contained, our goal is always minimum space & weight combined with maximum efficiency. Click any model for full specifications.</p>
+      </div>
+    </div>
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="diesel">Diesel</button>
+      <button class="filter-btn" data-filter="electric">Electric</button>
+      <button class="filter-btn" data-filter="seismic">Seismic</button>
+      <button class="filter-btn" data-filter="breathing">Breathing Air</button>
+      <button class="filter-btn" data-filter="vertical">Vertical</button>
+      <button class="filter-btn" data-filter="belt">Belt Drive</button>
+      <span class="filter-count" id="filter-count">19 / 19 MODELS</span>
+    </div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<!-- ============ AIR PURIFICATION ============ -->
+<section id="purification" style="background: var(--bg-2);">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="meta">
+        <span class="section-num">[04] BREATHING AIR</span>
+        <span class="eyebrow">AIR PURIFICATION</span>
+      </div>
+      <div>
+        <h2 class="section-title">Grade E breathing air,<br><em>delivered.</em></h2>
+        <p class="lede" style="margin-top:24px;">All AP systems produce Grade E breathing air using Lawrence Factor's X-pendable® filters. Available wall-mounted or incorporated into compressor packages. Each system includes pressure gauge, bleed valve, priority valve, relief valve, check valves, 316 SS tubing, and an anodized aluminum alloy moisture separator with bronze filter element.</p>
+      </div>
+    </div>
+    <table class="ap-table" data-reveal>
+      <thead>
+        <tr><th>Model</th><th>Max Flow</th><th>Volume</th><th>Chambers</th><th>Dimensions</th><th>Weight</th></tr>
+      </thead>
+      <tbody id="ap-table-body"></tbody>
+    </table>
+    <p style="margin-top:24px;font-family:var(--mono);font-size:11px;color:var(--steel-dim);letter-spacing:0.05em;">* Amount of processed air always depends on compressor condition and ambient air factors such as temperature and humidity. AP-220 and larger are free-standing packages with lifting eyes, forklift clearance, high flow priority valve, and multiple check valves.</p>
+  </div>
+</section>
+
+<!-- ============ ACCESSORIES ============ -->
+<section id="accessories">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="meta">
+        <span class="section-num">[05] CASCADE · STORAGE · DISTRIBUTION · DRAIN</span>
+        <span class="eyebrow">ACCESSORIES</span>
+      </div>
+      <h2 class="section-title">Everything <em>around</em> the compressor.</h2>
+    </div>
+    <div class="acc-grid" id="accessories-grid"></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" style="background: var(--bg-2);">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="meta">
+        <span class="section-num">[06] SERVICES & TRAINING</span>
+        <span class="eyebrow">SERVICES</span>
+      </div>
+      <h2 class="section-title">Free training. <em>Anywhere</em> in the world.</h2>
+    </div>
+    <div class="why-grid" style="border-bottom: 0;">
+      <div class="why-item">
+        <div class="num">SERVICE 01</div>
+        <h3>Operator Training</h3>
+        <p>Free in-depth training at Stark Industries or anywhere in the world. Operator qualification is mandatory for warranty activation. Includes log book maintenance, air quality testing procedures, and troubleshooting protocols.</p>
+      </div>
+      <div class="why-item">
+        <div class="num">SERVICE 02</div>
+        <h3>Parts & Service</h3>
+        <p>Complete supply of spare parts on shelves at our Houston facility. Service manuals included with all major purchases. On-site service specialists available. Air purification testing — setup and optimization on request.</p>
+      </div>
+      <div class="why-item">
+        <div class="num">SERVICE 03</div>
+        <h3>Periodic Maintenance</h3>
+        <p>"Our compressor room should be as clean as a hospital operating room." Periodic maintenance programs available. Warranty activation requires signed commitment to log-book practice and operator qualification.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REMANUFACTURING ============ -->
+<section id="remanufacturing" class="reman">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="meta">
+        <span class="section-num">[07] BEFORE / AFTER</span>
+        <span class="eyebrow">REMANUFACTURING</span>
+      </div>
+      <h2 class="section-title">Turn your old compressor into<br>a <em>Stark-remanufactured</em> compressor.</h2>
+    </div>
+    <div class="reman-grid">
+      <div class="before-after" id="before-after" data-reveal>
+        <span class="ba-label before">BEFORE</span>
+        <span class="ba-label after">AFTER</span>
+        <div class="ba-img ba-after">
+          <img src="starkafter.png" alt="Stark remanufactured compressor — after">
+        </div>
+        <div class="ba-img ba-before">
+          <img src="starkbefore.jpg" alt="Compressor before remanufacturing">
+        </div>
+        <div class="ba-handle"></div>
+      </div>
+      <div data-reveal>
+        <p class="lede">The obvious answer would be that the re-manufactured compressor would save you money over the purchase of a new unit. The not so obvious — but better — answer is that a Stark remanufactured unit not only costs less than new but is <em style="color:var(--gold);font-family:var(--serif);">better than new</em>.</p>
+        <div class="reman-list">
+          <div class="item"><span class="num">→ 01</span><span class="lbl">Re-orient configuration</span></div>
+          <div class="item"><span class="num">→ 02</span><span class="lbl">Solve balance/vibration problems</span></div>
+          <div class="item"><span class="num">→ 03</span><span class="lbl">Convert electric ↔ gas/diesel</span></div>
+          <div class="item"><span class="num">→ 04</span><span class="lbl">Serviceability improvements</span></div>
+          <div class="item"><span class="num">→ 05</span><span class="lbl">Superior parts</span></div>
+          <div class="item"><span class="num">→ 06</span><span class="lbl">On-site service</span></div>
+          <div class="item"><span class="num">→ 07</span><span class="lbl">Direct drive specialists</span></div>
+          <div class="item"><span class="num">→ 08</span><span class="lbl">Easier-access maintenance</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="meta">
+        <span class="section-num">[08] HOUSTON, TX · EST. 1962</span>
+        <span class="eyebrow">ABOUT</span>
+      </div>
+      <h2 class="section-title">From a Houston machine shop<br>to <em>Africa to the Arctic</em>.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" data-reveal>
+        <p>Stark Industries was founded in <strong>1962</strong> as a machine shop in Houston, Texas by <strong>Jess Stark</strong>. As the business grew, Jess steered Stark Industries into manufacturing specialized high pressure compressor packages in <strong>1969</strong>.</p>
+        <p>Today, Stark designs, maintains, and re-manufactures all compressors in our own <strong>40,000 square foot</strong> facility on 1¼ acres in the heart of Houston.</p>
+        <p>Our goal: always minimum space & weight, combined with maximum efficiency.</p>
+        <p>You will find Stark compressors from <strong>Africa to the Arctic Circle</strong>. Our compressors are built to withstand the harshest of environments, using stainless-steel fittings whenever possible.</p>
+      </div>
+      <div class="about-photos" data-reveal>
+        <div class="about-photo"><img src="starkexterior.jpg" alt="Stark Industries facility exterior"></div>
+        <div class="about-photo"><img src="starkassembly1.jpg" alt="Shop floor — assembly"></div>
+        <div class="about-photo"><img src="starkassembly2.jpg" alt="Compressor build stage"></div>
+        <div class="about-photo"><img src="starkassembly3.jpg" alt="Parts inventory"></div>
+      </div>
+    </div>
+    <blockquote class="about-quote" data-reveal>
+      "Stark Industries has consistently stayed away from programmable controllers on our compressors. The conventional controls on all of our equipment manufactured since 1969 have been extremely reliable and are still running today. This is in stark contrast to the enormous failure rate of PLCs. Simplicity translates directly to reliability & long life."
+      <span class="by">— STARK INDUSTRIES PHILOSOPHY</span>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ CUSTOMERS ============ -->
+<section class="customers" id="customers" style="padding: 80px 0;">
+  <div class="wrap">
+    <div class="section-head" data-reveal style="margin-bottom: 0;">
+      <div class="meta">
+        <span class="section-num">[09] CLIENTS</span>
+        <span class="eyebrow">TRUSTED BY</span>
+      </div>
+      <p class="lede">Stark compressors have been trusted by some of the world's leading energy, exploration, and industrial companies — deployed from Houston to Africa to the Arctic Circle.</p>
+    </div>
+  </div>
+  <div class="marquee" id="marquee"></div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner">
+  <div class="wrap">
+    <span class="eyebrow" style="display:inline-block;margin-bottom:16px;">READY TO TALK?</span>
+    <h2>Call us. We pick up.</h2>
+    <a href="tel:7135920377" class="phone">713 · 592 · 0377</a>
+    <div class="phone-sub">TOLL FREE · 888 · 713 · 4444</div>
+    <a href="#contact" class="btn btn-primary">Request a Quote <span class="arrow">→</span></a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="meta">
+        <span class="section-num">[10] GET IN TOUCH</span>
+        <span class="eyebrow">CONTACT</span>
+      </div>
+      <h2 class="section-title">Tell us what you're <em>building</em>.</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <p class="lede">Whether you need a 5 CFM breathing-air unit or a 244 CFM seismic package — call, email, or fill out the form. We respond within one business day.</p>
+        <a href="tel:7135920377" class="big-phone">713 · 592 · 0377</a>
+        <div class="big-phone-sub">DIRECT LINE · 6511 MAPLERIDGE ST</div>
+        <dl>
+          <dt>Address</dt>
+          <dd>6511 Mapleridge St<br>Houston, TX 77081</dd>
+          <dt>Toll Free</dt>
+          <dd>888 · 713 · 4444</dd>
+          <dt>Fax</dt>
+          <dd>592 · 8055</dd>
+          <dt>Sales</dt>
+          <dd><a href="mailto:jstark@starkindustries.com">jstark@starkindustries.com</a></dd>
+          <dt>Service</dt>
+          <dd><a href="mailto:josh@starkindustries.com">josh@starkindustries.com</a></dd>
+          <dt>Office</dt>
+          <dd><a href="mailto:lori@starkindustries.com">lori@starkindustries.com</a></dd>
+        </dl>
+      </div>
+      <form class="form" id="contact-form" data-reveal>
+        <div class="form-row">
+          <div class="field">
+            <label>Name <span class="req">*</span></label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="field">
+            <label>Company</label>
+            <input type="text" name="company">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="tel" name="phone">
+          </div>
+        </div>
+        <div class="field">
+          <label>What are you looking for? <span class="req">*</span></label>
+          <textarea name="message" required placeholder="Model, application, target pressure & flow, deployment environment..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Quote Request <span class="arrow">→</span></button>
+        <div class="form-success" id="form-success">
+          ✓ MESSAGE RECEIVED — A Stark engineer will respond within one business day.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div style="margin-bottom: 16px;">
+          <img src="Starkindustrieslogo.png" alt="Stark Industries" class="brand-logo">
+        </div>
+        <p style="color: var(--text-dim); font-size: 13px; max-width: 30ch;">High-pressure compressors built in Houston, Texas. Africa to the Arctic Circle since 1962.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+        <ul>
+          <li><a href="#compressors">Compressors</a></li>
+          <li><a href="#purification">Air Purification</a></li>
+          <li><a href="#accessories">Accessories</a></li>
+          <li><a href="#remanufacturing">Remanufacturing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services & Training</a></li>
+          <li><a href="#customers">Customers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li>713 · 592 · 0377</li>
+          <li>888 · 713 · 4444</li>
+          <li><a href="mailto:jstark@starkindustries.com">jstark@starkindustries.com</a></li>
+          <li>6511 Mapleridge St<br>Houston, TX 77081</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 1962—2026 STARK INDUSTRIES · ALL RIGHTS RESERVED</span>
+      <span>BUILT IN HOUSTON · DEPLOYED WORLDWIDE</span>
+      <span>SITE BY <a href="https://bookistudios.com" target="_blank" rel="noopener" style="color:var(--gold);letter-spacing:inherit;">BOOKISTUDIOS</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PRODUCT DETAIL OVERLAY ============ -->
+<div class="product-detail" id="product-detail">
+  <div class="panel"></div>
+</div>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="data.js"></script>
+<script src="hero3d.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
